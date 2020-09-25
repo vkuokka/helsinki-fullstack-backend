@@ -7,6 +7,7 @@
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
     "build:ui": "rm -rf build && cd ../helsinki-fullstack/osa2/puhelinluettelo && npm run build --prod && cp -r build ../../../helsinki-fullstack-backend && cd -",
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "vkuokka",
@@ -20,6 +21,12 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.2",
+    "eslint-plugin-react-hooks": "^4.0.0",
     "nodemon": "^2.0.4"
   }
 }
