@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
+    "build:ui": "rm -rf build && cd ../helsinki-fullstack/osa2/puhelinluettelo && npm run build --prod && cp -r build ../../../helsinki-fullstack-backend && cd -",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "vkuokka",
@@ -15,6 +16,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.10.6",
+    "mongoose-unique-validator": "^2.0.3",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
